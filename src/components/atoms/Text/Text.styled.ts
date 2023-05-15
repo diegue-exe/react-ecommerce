@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
-export const StyledText = styled.p<{
+type Props = {
   color: string;
   textSize: {
     fontSize: string;
     lineHeight: string;
   };
   fontWeight: string;
-}>`
+};
+
+export const StyledText = styled.p<Props>`
   color: ${(props) => props.color};
   font-size: ${(props) => props.textSize.fontSize};
   line-height: ${(props) => props.textSize.lineHeight};

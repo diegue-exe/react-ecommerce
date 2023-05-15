@@ -15,14 +15,16 @@ import Cart from '../../atoms/Icons/Cart';
 import Heart from '../../atoms/Icons/Heart';
 import { text } from '../../../theme/theme';
 
-export const Header = ({
-  highlightedMessage,
-  title,
-  anchors
-}: {
+type Props = {
   highlightedMessage: string;
   title: string;
   anchors: string[];
+};
+
+export const Header: React.FC<Props> = ({
+  highlightedMessage,
+  title,
+  anchors
 }) => {
   return (
     <>
