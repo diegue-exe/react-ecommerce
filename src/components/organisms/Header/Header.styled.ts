@@ -26,6 +26,7 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   margin: ${container.margin};
+  padding: 40px 0px 16px 0px;
   max-width: ${container.maxWidth};
 `;
 
