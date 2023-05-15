@@ -1,5 +1,4 @@
 import React from 'react';
-// import { NavTitle } from "../../atoms/Text/Text";
 import { Text } from '../../atoms/Text/Text';
 import {
   NavContainer,
