@@ -1,10 +1,12 @@
 import { StyledText } from './Text.styled';
 
 export const Text = ({
+  title,
   color,
   textSize,
   fontWeight
 }: {
+  title: string;
   color: string;
   textSize: {
     lineHeight: string;
@@ -13,9 +15,8 @@ export const Text = ({
   fontWeight: string;
 }) => {
   return (
-    <StyledText
-      color={color}
-      textSize={textSize}
-      fontWeight={fontWeight}></StyledText>
+    <StyledText color={color} textSize={textSize} fontWeight={fontWeight}>
+      {title}
+    </StyledText>
   );
 };
