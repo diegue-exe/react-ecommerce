@@ -32,6 +32,7 @@ export const Header = ({
       <Nav>
         <NavContainer>
           <Text
+            tag="h1"
             color={text.colors.primary}
             textSize={text.size.big}
             fontWeight="700"

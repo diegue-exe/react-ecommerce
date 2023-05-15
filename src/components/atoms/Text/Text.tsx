@@ -1,11 +1,7 @@
 import { StyledText } from './Text.styled';
 
-export const Text = ({
-  title,
-  color,
-  textSize,
-  fontWeight
-}: {
+type Props = {
+  tag?: 'h1' | 'h2' | 'h3' | 'p' | 'span';
   title: string;
   color: string;
   textSize: {
@@ -13,9 +9,21 @@ export const Text = ({
     fontSize: string;
   };
   fontWeight: string;
+};
+
+export const Text: React.FC<Props> = ({
+  tag,
+  title,
+  color,
+  textSize,
+  fontWeight
 }) => {
   return (
-    <StyledText color={color} textSize={textSize} fontWeight={fontWeight}>
+    <StyledText
+      as={tag}
+      color={color}
+      textSize={textSize}
+      fontWeight={fontWeight}>
       {title}
     </StyledText>
   );
