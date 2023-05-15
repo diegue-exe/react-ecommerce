@@ -12,7 +12,7 @@ export const text = {
     accent: '#db4444',
     white: '#fff'
   },
-  textSize: {
+  size: {
     heading: {
       fontSize: '36px',
       lineHeight: '48px'
