@@ -13,7 +13,7 @@ import {
 } from './Header.styled';
 import Cart from '../../atoms/Icons/Cart';
 import Heart from '../../atoms/Icons/Heart';
-import { text } from '../../theme';
+import { text } from '../../../theme/theme';
 
 export const Header = ({
   highlightedMessage,
@@ -32,12 +32,11 @@ export const Header = ({
       <Nav>
         <NavContainer>
           <Text
-            as="h1"
             color={text.colors.primary}
-            fontSize={text.sizes.big}
-            fontWeight="700">
-            {title}
-          </Text>
+            textSize={text.size.big}
+            fontWeight="700"
+            title={title}
+          />
           <NavLinks>
             {anchors.map((anchor) => {
               return <NavAnchor>{anchor}</NavAnchor>;

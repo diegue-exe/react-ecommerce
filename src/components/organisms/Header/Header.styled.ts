@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { text, container, background } from '../../theme';
+import { text, container, background } from '../../../theme/theme';
 
 export const HighlightedContainer = styled.div`
   display: flex;
@@ -10,14 +10,15 @@ export const HighlightedContainer = styled.div`
 `;
 
 export const HighlightedMessage = styled.span`
-  font-size: ${text.sizes.small};
+  font-size: ${text.size.small.fontSize};
   color: ${text.colors.white};
-  max-width: 1170px;
+  max-width: ${container.maxWidth};
   margin: auto;
 `;
 
 export const Nav = styled.nav`
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 60px;
 `;
 
 export const NavContainer = styled.nav`
@@ -34,7 +35,7 @@ export const NavLinks = styled.nav`
 `;
 
 export const NavAnchor = styled.a`
-  font-size: ${text.sizes.normal};
+  font-size: ${text.size.normal.fontSize};
   color: ${text.colors.primary};
   line-height: 24px;
 
@@ -59,7 +60,7 @@ export const NavSearch = styled.input`
   color: #000;
   text-overflow: ellipsis;
   opacity: 0.5;
-  font-size: ${text.sizes.xsmall};
+  font-size: ${text.size.xsmall.fontSize};
   line-height: 18px;
   max-width: 248px;
 `;
