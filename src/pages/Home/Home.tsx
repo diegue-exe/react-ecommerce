@@ -1,6 +1,7 @@
 import React from 'react';
 import { GlobalStyle } from '../../theme/GlobalStyle/GlobalStyle';
 import { Header } from '../../components/organisms/Header';
+import { Footer } from '../../components/organisms/Footer';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
@@ -16,6 +17,7 @@ export const Home = () => {
         title={title}
         anchors={links}
       />
+      <Footer title={title}></Footer>
     </>
   );
 };
