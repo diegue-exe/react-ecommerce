@@ -35,8 +35,8 @@ export const Header: React.FC<Props> = ({
           <Text
             tag="h1"
             color={text.colors.primary}
-            textSize={text.size.big}
-            fontWeight="700"
+            textSize="big"
+            bold
             title={title}
           />
           <NavLinks>

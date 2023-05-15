@@ -1,17 +1,15 @@
 import styled from 'styled-components';
+import { text } from '../../../theme/theme';
 
 type Props = {
   color: string;
-  textSize: {
-    fontSize: string;
-    lineHeight: string;
-  };
+  textSize: 'heading' | 'big' | 'normal' | 'small' | 'xsmall';
   fontWeight: string;
 };
 
 export const StyledText = styled.p<Props>`
   color: ${(props) => props.color};
-  font-size: ${(props) => props.textSize.fontSize};
-  line-height: ${(props) => props.textSize.lineHeight};
+  font-size: ${(props) => text.size[props.textSize].fontSize};
+  line-height: ${(props) => props.textSize};
   font-weight: ${(props) => props.fontWeight};
 `;

@@ -16,15 +16,10 @@ export const Footer: React.FC<Props> = ({ title }) => {
             tag="h2"
             title={title}
             color={text.colors.white}
-            textSize={text.size.big}
-            fontWeight="700"
+            textSize="big"
+            bold
           />
-          <Text
-            title="Subscribe"
-            color={text.colors.white}
-            textSize={text.size.big}
-            fontWeight="500"
-          />
+          <Text title="Subscribe" color={text.colors.white} textSize="big" />
         </FooterColumn>
       </FooterContainer>
     </StyledFooter>
