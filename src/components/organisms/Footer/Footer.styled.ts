@@ -18,5 +18,23 @@ export const FooterContainer = styled.div`
 
 export const FooterColumn = styled.div`
   display: flex;
+  max-width: 200px;
   flex-direction: column;
+  gap: 24px;
+`;
+
+export const FooterColumnContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const FooterInput = styled.input`
+  background-color: ${background.black};
+  color: ${text.colors.secondary};
+  font-size: ${text.size.normal.fontSize};
+  line-height: ${text.size.normal.lineHeight};
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 12px;
 `;
