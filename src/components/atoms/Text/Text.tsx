@@ -12,10 +12,11 @@ type Props = {
 export const Text: React.FC<Props> = ({
   tag,
   title,
-  color = '#000',
+  color = 'primary',
   textSize,
   bold = false
 }) => {
+  console.log(color + title);
   return (
     <StyledText as={tag} color={color} textSize={textSize} bold={bold}>
       {title}
