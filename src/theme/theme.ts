@@ -1,4 +1,4 @@
-const background = {
+export const background = {
   primary: '#fff',
   secondary: '#f5f5f5',
   accent: '#db4444',
@@ -6,7 +6,7 @@ const background = {
 };
 export type Background = keyof typeof background;
 
-const text = {
+export const text = {
   colors: {
     primary: '#000',
     secondary: '#7d8184',
@@ -38,7 +38,7 @@ const text = {
 };
 export type Color = keyof typeof text.colors;
 
-const container = {
+export const container = {
   maxWidth: '1170px',
   margin: 'auto'
 };
