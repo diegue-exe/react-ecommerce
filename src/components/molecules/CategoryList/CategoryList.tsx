@@ -1,10 +1,10 @@
 import React from 'react';
-import { Categories } from '../../../pages/Home/Home';
 import { CategoryCard } from '../CategoryCard';
 import { CategoryContainer } from './CategoryList.styled';
+import { CategoriesData } from '../../organisms/Categories';
 
 type Props = {
-  data: Categories;
+  data: CategoriesData;
 };
 
 export const CategoryList: React.FC<Props> = ({ data }) => {
