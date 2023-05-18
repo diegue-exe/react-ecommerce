@@ -2,21 +2,18 @@ import React from 'react';
 import {
   AppStoresContainer,
   DownloadContainer,
-  Facebook,
   FooterColumn,
   FooterColumnContent,
   FooterContainer,
   FooterInput,
-  Instagram,
-  Linkedin,
   SocialMediaContainer,
-  StyledFooter,
-  Twitter
+  StyledFooter
 } from './Footer.styled';
 import { Text } from '../../atoms/Text';
 import qrcode from '../../../assets/qrcode.png';
 import appstore from '../../../assets/appstore.png';
 import playstore from '../../../assets/playstore.png';
+import { Icon } from '../../atoms/Icon';
 
 type Props = {
   title: string;
@@ -72,10 +69,10 @@ export const Footer: React.FC<Props> = ({ title, columns }) => {
               </AppStoresContainer>
             </DownloadContainer>
             <SocialMediaContainer>
-              <Facebook />
-              <Twitter />
-              <Instagram />
-              <Linkedin />
+              <Icon name="facebook" color="white" />
+              <Icon name="twitter" color="white" />
+              <Icon name="instagram" color="white" />
+              <Icon name="linkedin" color="white" />
             </SocialMediaContainer>
           </FooterColumnContent>
         </FooterColumn>
