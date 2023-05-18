@@ -11,5 +11,5 @@ export const StyledText = styled.p<Props>`
   color: ${({ color }) => text.colors[color]};
   font-size: ${({ textSize }) => text.size[textSize].fontSize};
   line-height: ${(props) => props.textSize};
-  font-weight: ${({ bold }) => (bold ? '700' : '400')};
+  font-weight: ${({ bold }) => (bold ? '600' : '400')};
 `;
