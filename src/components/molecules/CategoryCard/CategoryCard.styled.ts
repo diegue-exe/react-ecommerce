@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { background, text } from '../../../theme/theme';
-import { Text } from '../../atoms/Text';
 
 export const Card = styled.article`
   display: flex;
