@@ -52,7 +52,7 @@ export const icon = {
     },
     medium: {
       circle: '46px',
-      icon: '16px'
+      icon: '20px'
     },
     big: {
       circle: '58px',

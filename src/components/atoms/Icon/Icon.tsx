@@ -12,7 +12,7 @@ type Props = {
 export const Icon: React.FC<Props> = ({
   name,
   color = 'primary',
-  size = 'small'
+  size = 'medium'
 }) => {
   return <StyledIcon src={`icons/${name}.svg`} color={color} size={size} />;
 };
