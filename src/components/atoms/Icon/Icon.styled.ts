@@ -11,6 +11,9 @@ export const StyledIcon = styled(ReactSVG)<Props>`
   display: flex;
   align-items: center;
   fill: ${({ color }) => text.colors[color]};
-  width: ${({ size }) => icon.size[size].icon};
-  height: ${({ size }) => icon.size[size].icon};
+
+  & > div > svg {
+    width: ${({ size }) => icon.size[size].icon};
+    height: ${({ size }) => icon.size[size].icon};
+  }
 `;
