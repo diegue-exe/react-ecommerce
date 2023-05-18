@@ -43,3 +43,22 @@ export const container = {
   margin: 'auto'
 };
 export type Container = keyof typeof container;
+
+export const icon = {
+  size: {
+    small: {
+      circle: '34px',
+      icon: '16px'
+    },
+    medium: {
+      circle: '46px',
+      icon: '16px'
+    },
+    big: {
+      circle: '58px',
+      icon: '46px'
+    }
+  }
+};
+
+export type IconSize = keyof typeof icon.size;
