@@ -37,6 +37,7 @@ export const text = {
   }
 };
 export type Color = keyof typeof text.colors;
+export type TextSize = keyof typeof text.size;
 
 export const container = {
   maxWidth: '1170px',
