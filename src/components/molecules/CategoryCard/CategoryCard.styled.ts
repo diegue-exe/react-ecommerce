@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { background, text } from '../../../theme/theme';
+import { Text } from '../../atoms/Text';
 
 export const Card = styled.article`
   display: flex;
@@ -8,6 +10,12 @@ export const Card = styled.article`
   align-items: center;
   border: 2px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
+
+  &:hover {
+    background-color: ${background.accent};
+    color: ${text.colors.white};
+    border: 2px solid ${background.accent};
+  }
 `;
 
 export const CardContainer = styled.div`

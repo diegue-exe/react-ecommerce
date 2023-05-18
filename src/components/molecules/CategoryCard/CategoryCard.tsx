@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContainer } from './CategoryCard.styled';
 import { Icon } from '../../atoms/Icon';
 import { Text } from '../../atoms/Text';
@@ -16,12 +16,27 @@ type Props = {
 };
 
 export const CategoryCard: React.FC<Props> = ({ text, icon }) => {
-  // TODO selected variant with boolean attribute
+  const [isHovered, setHoverState] = useState(false);
+  const onCardHover = () => {
+    setHoverState(true);
+  };
+  const onCardLeave = () => {
+    setHoverState(false);
+  };
+
   return (
-    <Card>
+    <Card onMouseEnter={onCardHover} onMouseLeave={onCardLeave}>
       <CardContainer>
-        <Icon name={icon.name} size={icon.size}></Icon>
-        <Text title={text.categoryName} textSize={text.size} />
+        <Icon
+          name={icon.name}
+          size={icon.size}
+          color={isHovered ? 'white' : 'primary'}
+        />
+        <Text
+          title={text.categoryName}
+          textSize={text.size}
+          color={isHovered ? 'white' : 'primary'}
+        />
       </CardContainer>
     </Card>
   );
