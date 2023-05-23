@@ -2,7 +2,6 @@ import React from 'react';
 import { GlobalStyle } from '../../theme/GlobalStyle/GlobalStyle';
 import { Header } from '../../components/organisms/Header';
 import { Footer } from '../../components/organisms/Footer';
-import { CategoryList } from '../../components/molecules/CategoryList';
 import { Categories } from '../../components/organisms/Categories';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
