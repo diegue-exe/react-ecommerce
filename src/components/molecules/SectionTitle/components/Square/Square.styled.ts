@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Background } from '../../../theme/theme';
-import { background } from '../../../theme/theme';
+import { Background } from '../../../../../theme/theme';
+import { background } from '../../../../../theme/theme';
 
 type Props = {
   backgroundColor: Background;

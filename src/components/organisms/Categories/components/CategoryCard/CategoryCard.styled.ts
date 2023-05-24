@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { background, text } from '../../../theme/theme';
+import { background, text } from '../../../../../theme/theme';
 
 export const Card = styled.article`
   display: flex;

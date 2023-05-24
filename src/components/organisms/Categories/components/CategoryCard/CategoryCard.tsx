@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Card, CardContainer } from './CategoryCard.styled';
-import { Icon } from '../../atoms/Icon';
-import { Text } from '../../atoms/Text';
-import { IconSize, TextSize } from '../../../theme/theme';
+import { Icon } from '../../../../atoms/Icon';
+import { Text } from '../../../../atoms/Text';
+import { IconSize, TextSize } from '../../../../../theme/theme';
 
 type Props = {
   text: {
@@ -29,12 +29,12 @@ export const CategoryCard: React.FC<Props> = ({ text, icon }) => {
       <CardContainer>
         <Icon
           name={icon.name}
-          size={icon.size}
+          size="big"
           color={isHovered ? 'white' : 'primary'}
         />
         <Text
           title={text.categoryName}
-          textSize={text.size}
+          textSize="normal"
           color={isHovered ? 'white' : 'primary'}
         />
       </CardContainer>

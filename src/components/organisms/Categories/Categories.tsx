@@ -1,7 +1,7 @@
 import React from 'react';
 import { IconSize, TextSize } from '../../../theme/theme';
-import { CategoryList } from '../../molecules/CategoryList';
-import { CategoryTitle } from '../../molecules/CategoryTitle';
+import { CategoryList } from './components/CategoryList';
+import { SectionTitle } from '../../molecules/SectionTitle';
 import { CategoriesSection } from './Categories.styled';
 import { Text } from '../../atoms/Text';
 
@@ -82,7 +82,7 @@ const categories: CategoriesData = [
 export const Categories = () => {
   return (
     <CategoriesSection>
-      <CategoryTitle categoryName="Categories"></CategoryTitle>
+      <SectionTitle sectionName="Categories"></SectionTitle>
       <Text
         title="Browse By Category"
         color="primary"

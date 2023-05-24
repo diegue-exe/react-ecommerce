@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledSquare } from './Square.styled';
-import { Background } from '../../../theme/theme';
+import { Background } from '../../../../../theme/theme';
 
 type Props = {
   backgroundColor?: Background;

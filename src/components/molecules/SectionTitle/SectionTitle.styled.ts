@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const CategoryContainer = styled.div`
+export const SectionContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 16px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CategoryCard } from '../CategoryCard';
 import { CategoryContainer } from './CategoryList.styled';
-import { CategoriesData } from '../../organisms/Categories';
+import { CategoriesData } from '../..';
 
 type Props = {
   data: CategoriesData;
