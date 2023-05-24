@@ -1,81 +1,38 @@
 import React from 'react';
-import { IconSize, TextSize } from '../../../theme/theme';
 import { CategoryList } from './components/CategoryList';
 import { SectionTitle } from '../../molecules/SectionTitle';
 import { CategoriesSection } from './Categories.styled';
 import { Text } from '../../atoms/Text';
 
 export type CategoriesData = {
-  text: {
-    categoryName: string;
-    size: TextSize;
-  };
-  icon: {
-    size: IconSize;
-    name: string;
-  };
+  text: string;
+  icon: string;
 }[];
 
 const categories: CategoriesData = [
   {
-    text: {
-      categoryName: 'Phones',
-      size: 'normal'
-    },
-    icon: {
-      size: 'big',
-      name: 'mobile'
-    }
+    text: 'Phones',
+    icon: 'mobile'
   },
   {
-    text: {
-      categoryName: 'Computers',
-      size: 'normal'
-    },
-    icon: {
-      size: 'big',
-      name: 'desktop'
-    }
+    text: 'Computers',
+    icon: 'desktop'
   },
   {
-    text: {
-      categoryName: 'Smartwatch',
-      size: 'normal'
-    },
-    icon: {
-      size: 'big',
-      name: 'watch'
-    }
+    text: 'Smartwatch',
+    icon: 'watch'
   },
   {
-    text: {
-      categoryName: 'Camera',
-      size: 'normal'
-    },
-    icon: {
-      size: 'big',
-      name: 'camera'
-    }
+    text: 'Camera',
+    icon: 'camera'
   },
   {
-    text: {
-      categoryName: 'HeadPhones',
-      size: 'normal'
-    },
-    icon: {
-      size: 'big',
-      name: 'headphones'
-    }
+    text: 'HeadPhones',
+    icon: 'headphones'
   },
   {
-    text: {
-      categoryName: 'Gaming',
-      size: 'normal'
-    },
-    icon: {
-      size: 'big',
-      name: 'gaming'
-    }
+    text: 'Gaming',
+    icon: 'gaming'
   }
 ];
 

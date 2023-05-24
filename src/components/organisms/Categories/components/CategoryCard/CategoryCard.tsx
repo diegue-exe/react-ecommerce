@@ -5,14 +5,8 @@ import { Text } from '../../../../atoms/Text';
 import { IconSize, TextSize } from '../../../../../theme/theme';
 
 type Props = {
-  text: {
-    categoryName: string;
-    size: TextSize;
-  };
-  icon: {
-    size: IconSize;
-    name: string;
-  };
+  text: string;
+  icon: string;
 };
 
 export const CategoryCard: React.FC<Props> = ({ text, icon }) => {
@@ -27,13 +21,9 @@ export const CategoryCard: React.FC<Props> = ({ text, icon }) => {
   return (
     <Card onMouseEnter={onCardHover} onMouseLeave={onCardLeave}>
       <CardContainer>
-        <Icon
-          name={icon.name}
-          size="big"
-          color={isHovered ? 'white' : 'primary'}
-        />
+        <Icon name={icon} size="big" color={isHovered ? 'white' : 'primary'} />
         <Text
-          title={text.categoryName}
+          title={text}
           textSize="normal"
           color={isHovered ? 'white' : 'primary'}
         />
