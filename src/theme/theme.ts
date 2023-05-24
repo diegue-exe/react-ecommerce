@@ -3,7 +3,8 @@ export const theme = {
     primary: '#fff',
     secondary: '#f5f5f5',
     accent: '#db4444',
-    black: '#000'
+    black: '#000',
+    green: '#00ff66'
   },
   text: {
     colors: {
@@ -54,6 +55,32 @@ export const theme = {
         icon: '46px'
       }
     }
+  },
+  button: {
+    rounded: {
+      width: '46px',
+      height: '46px',
+      borderRadius: '50%',
+      backgroundColor: 'secondary'
+    },
+    roundedSmall: {
+      width: '34px',
+      height: '34px',
+      borderRadius: '50%',
+      backgroundColor: 'primary'
+    },
+    accent: {
+      width: '100%',
+      height: '56px',
+      borderRadius: '4px',
+      backgroundColor: 'accent'
+    },
+    green: {
+      width: '100%',
+      height: '56px',
+      borderRadius: '4px',
+      backgroundColor: 'green'
+    }
   }
 };
 
@@ -62,3 +89,4 @@ export type Color = keyof typeof theme.text.colors;
 export type TextSize = keyof typeof theme.text.size;
 export type Container = keyof typeof theme.container;
 export type IconSize = keyof typeof theme.icon.size;
+export type ButtonVariant = keyof typeof theme.button;
