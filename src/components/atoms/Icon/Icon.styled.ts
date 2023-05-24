@@ -13,7 +13,7 @@ export const StyledIcon = styled(ReactSVG)<Props>`
   fill: ${({ color, theme }) => theme.text.colors[color]};
 
   & > div > svg {
-    width: ${({ size, theme }) => theme.icon.size[size].icon};
-    height: ${({ size, theme }) => theme.icon.size[size].icon};
+    width: ${({ size, theme }) => theme.icon.size[size]};
+    height: ${({ size, theme }) => theme.icon.size[size]};
   }
 `;

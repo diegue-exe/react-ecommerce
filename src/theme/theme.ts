@@ -42,18 +42,9 @@ export const theme = {
   },
   icon: {
     size: {
-      small: {
-        circle: '34px',
-        icon: '16px'
-      },
-      medium: {
-        circle: '46px',
-        icon: '20px'
-      },
-      big: {
-        circle: '58px',
-        icon: '46px'
-      }
+      small: '16px',
+      medium: '20px',
+      big: '46px'
     }
   },
   button: {
