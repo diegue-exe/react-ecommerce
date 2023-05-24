@@ -10,7 +10,6 @@ type Props = {
 };
 
 export const SectionTitle: React.FC<Props> = ({
-  // TODO rename SectionTitle
   sectionName,
   squareColor = 'accent'
 }) => {
