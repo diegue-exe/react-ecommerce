@@ -3,6 +3,8 @@ import { GlobalStyle } from '../../theme/GlobalStyle/GlobalStyle';
 import { Header } from '../../components/organisms/Header';
 import { Footer } from '../../components/organisms/Footer';
 import { Categories } from '../../components/organisms/Categories';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../../theme/theme';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
@@ -31,13 +33,15 @@ export const Home = () => {
   return (
     <>
       <GlobalStyle />
-      <Header
-        highlightedMessage={highlightedMessage}
-        title={title}
-        anchors={links}
-      />
-      <Categories />
-      <Footer title={title} columns={columns}></Footer>
+      <ThemeProvider theme={theme}>
+        <Header
+          highlightedMessage={highlightedMessage}
+          title={title}
+          anchors={links}
+        />
+        <Categories />
+        <Footer title={title} columns={columns}></Footer>
+      </ThemeProvider>
     </>
   );
 };

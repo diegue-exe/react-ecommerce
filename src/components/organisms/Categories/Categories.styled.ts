@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { container } from '../../../theme/theme';
 
 export const CategoriesSection = styled.section`
   display: flex;
   flex-direction: column;
-  max-width: ${container.maxWidth};
+  max-width: ${({ theme }) => theme.container.maxWidth};
   margin: auto;
 `;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { background, container, text } from '../../../theme/theme';
 export const StyledFooter = styled.footer`
-  background-color: ${background.black};
+  background-color: ${({ theme }) => theme.background.black};
   width: 100%;
   min-height: 440px;
 `;
@@ -9,8 +8,8 @@ export const StyledFooter = styled.footer`
 export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: ${container.maxWidth};
-  margin: ${container.margin};
+  max-width: ${({ theme }) => theme.container.maxWidth};
+  margin: ${({ theme }) => theme.container.margin};
   padding: 40px 0px 60px 0px;
 `;
 
@@ -28,10 +27,10 @@ export const FooterColumnContent = styled.div`
 `;
 
 export const FooterInput = styled.input`
-  background-color: ${background.black};
-  color: ${text.colors.secondary};
-  font-size: ${text.size.normal.fontSize};
-  line-height: ${text.size.normal.lineHeight};
+  background-color: ${({ theme }) => theme.background.black};
+  color: ${({ theme }) => theme.text.colors.secondary};
+  font-size: ${({ theme }) => theme.text.size.normal.fontSize};
+  line-height: ${({ theme }) => theme.text.size.normal.lineHeight};
   border: 1px solid white;
   border-radius: 8px;
   padding: 12px;

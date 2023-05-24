@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Color, text } from '../../../theme/theme';
+import { Color } from '../../../theme/theme';
 
 type Props = {
   color: Color;
@@ -8,8 +8,8 @@ type Props = {
 };
 
 export const StyledText = styled.p<Props>`
-  color: ${({ color }) => text.colors[color]};
-  font-size: ${({ textSize }) => text.size[textSize].fontSize};
+  color: ${({ color, theme }) => theme.text.colors[color]};
+  font-size: ${({ textSize, theme }) => theme.text.size[textSize].fontSize};
   line-height: ${(props) => props.textSize};
   font-weight: ${({ bold }) => (bold ? '600' : '400')};
 `;

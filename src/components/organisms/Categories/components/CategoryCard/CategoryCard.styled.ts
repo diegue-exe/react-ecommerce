@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { background, text } from '../../../../../theme/theme';
 
 export const Card = styled.article`
   display: flex;
@@ -11,9 +10,9 @@ export const Card = styled.article`
   border-radius: 4px;
 
   &:hover {
-    background-color: ${background.accent};
-    color: ${text.colors.white};
-    border: 2px solid ${background.accent};
+    background-color: ${({ theme }) => theme.background.accent};
+    color: ${({ theme }) => theme.text.colors.white};
+    border: 2px solid ${({ theme }) => theme.background.accent};
   }
 `;
 

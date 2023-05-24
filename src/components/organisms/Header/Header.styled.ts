@@ -1,18 +1,17 @@
 import styled from 'styled-components';
-import { text, container, background } from '../../../theme/theme';
 
 export const HighlightedContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: ${background.black};
+  background-color: ${({ theme }) => theme.background.black};
   height: 48px;
 `;
 
 export const HighlightedMessage = styled.span`
-  font-size: ${text.size.small.fontSize};
-  color: ${text.colors.white};
-  max-width: ${container.maxWidth};
+  font-size: ${({ theme }) => theme.text.size.small.fontSize};
+  color: ${({ theme }) => theme.text.colors.white};
+  max-width: ${({ theme }) => theme.container.maxWidth};
   margin: auto;
 `;
 
@@ -25,9 +24,9 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: ${container.margin};
+  margin: ${({ theme }) => theme.container.margin};
   padding: 40px 0px 16px 0px;
-  max-width: ${container.maxWidth};
+  max-width: ${({ theme }) => theme.container.maxWidth};
 `;
 
 export const NavLinks = styled.nav`
@@ -36,8 +35,8 @@ export const NavLinks = styled.nav`
 `;
 
 export const NavAnchor = styled.a`
-  font-size: ${text.size.normal.fontSize};
-  color: ${text.colors.primary};
+  font-size: ${({ theme }) => theme.text.size.normal.fontSize};
+  color: ${({ theme }) => theme.text.colors.primary};
   line-height: 24px;
 
   display: inline-block;
@@ -55,13 +54,13 @@ export const NavAnchor = styled.a`
 `;
 
 export const NavSearch = styled.input`
-  background-color: ${background.secondary};
+  background-color: ${({ theme }) => theme.background.secondary};
   padding: 10px 70px 10px 20px;
   border: none;
   color: #000;
   text-overflow: ellipsis;
   opacity: 0.5;
-  font-size: ${text.size.xsmall.fontSize};
+  font-size: ${({ theme }) => theme.text.size.xsmall.fontSize};
   line-height: 18px;
   max-width: 248px;
 `;
