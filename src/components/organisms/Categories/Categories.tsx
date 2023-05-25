@@ -2,7 +2,6 @@ import React from 'react';
 import { CategoryList } from './components/CategoryList';
 import { SectionTitle } from '../../molecules/SectionTitle';
 import { CategoriesSection } from './Categories.styled';
-import { Text } from '../../atoms/Text';
 
 export type CategoriesData = {
   text: string;
@@ -39,13 +38,7 @@ const categories: CategoriesData = [
 export const Categories = () => {
   return (
     <CategoriesSection>
-      <SectionTitle sectionName="Categories"></SectionTitle>
-      <Text
-        title="Browse By Category"
-        color="primary"
-        textSize="heading"
-        bold
-      />
+      <SectionTitle sectionName="Categories" heading="Browse By Category" />
       <CategoryList data={categories} />
     </CategoriesSection>
   );

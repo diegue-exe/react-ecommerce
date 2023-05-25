@@ -5,5 +5,5 @@ export const CategoryContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 48px;
-  margin: 70px 0px;
+  margin-bottom: 70px;
 `;
