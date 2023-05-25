@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { ImageContainer } from '../../atoms/ImageContainer';
+import { ImageContainer } from '../../../../atoms/ImageContainer';
 import { ItemContainer, PricesContainer } from './ItemDisplay.styled';
-import { Text } from '../../atoms/Text';
-import { Rating } from '../../atoms/Rating';
+import { Text } from '../../../../atoms/Text';
+import { Rating } from '../../../../atoms/Rating';
 
 type Props = {
   name: string;
