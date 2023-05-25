@@ -11,6 +11,7 @@ export const ImgContainer = styled.div`
   background-color: ${({ theme }) => theme.background.secondary};
 
   border-radius: 4px;
+  margin-bottom: 8px;
 `;
 
 export const ItemButtonContainer = styled.div`
