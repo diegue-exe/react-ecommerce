@@ -5,9 +5,7 @@ import { Footer } from '../../components/organisms/Footer';
 import { Categories } from '../../components/organisms/Categories';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/theme';
-import { ItemDisplay } from '../../components/molecules/ItemGrid/components/ItemDisplay';
 import { MonthlyProducts } from '../../components/organisms/MonthlyProducts';
-import { ItemGrid } from '../../components/molecules/ItemGrid';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
