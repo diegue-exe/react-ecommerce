@@ -2,10 +2,9 @@ import React from 'react';
 import { GlobalStyle } from '../../theme/GlobalStyle/GlobalStyle';
 import { Header } from '../../components/organisms/Header';
 import { Footer } from '../../components/organisms/Footer';
-import { Categories } from '../../components/organisms/Categories';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/theme';
-import { MonthlyProducts } from '../../components/organisms/MonthlyProducts';
+import { Sections } from '../../components/organisms/Sections';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
@@ -40,8 +39,7 @@ export const Home = () => {
           title={title}
           anchors={links}
         />
-        <Categories />
-        <MonthlyProducts />
+        <Sections />
         <Footer title={title} columns={columns}></Footer>
       </ThemeProvider>
     </>
