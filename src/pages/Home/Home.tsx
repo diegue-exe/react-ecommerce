@@ -1,9 +1,6 @@
 import React from 'react';
-import { GlobalStyle } from '../../theme/GlobalStyle/GlobalStyle';
 import { Header } from '../../components/organisms/Header';
 import { Footer } from '../../components/organisms/Footer';
-import { ThemeProvider } from 'styled-components';
-import { theme } from '../../theme/theme';
 import { Sections } from '../../components/organisms/Sections';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
@@ -32,16 +29,13 @@ const columns = [
 export const Home = () => {
   return (
     <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Header
-          highlightedMessage={highlightedMessage}
-          title={title}
-          anchors={links}
-        />
-        <Sections />
-        <Footer title={title} columns={columns}></Footer>
-      </ThemeProvider>
+      <Header
+        highlightedMessage={highlightedMessage}
+        title={title}
+        anchors={links}
+      />
+      <Sections />
+      <Footer title={title} columns={columns}></Footer>
     </>
   );
 };
