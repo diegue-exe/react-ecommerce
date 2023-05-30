@@ -2,50 +2,17 @@ import React from 'react';
 import { SectionTitle } from '../../molecules/SectionTitle';
 import { Container } from './MonthlyProducts.styled';
 import { ItemGrid } from '../../molecules/ItemGrid';
+import products from '../../../api/products.json';
 
-export const products = [
-  {
-    description: 'The north coat',
-    price: 260,
-    hasPreviousPrice: true,
-    previousPrice: 360,
-    image: 'north-coat',
-    score: 5,
-    amountOfRatings: 65
-  },
-  {
-    description: 'Gucci duffle bag',
-    price: 960,
-    hasPreviousPrice: true,
-    previousPrice: 1190,
-    image: 'gucci-bag',
-    score: 4.5,
-    amountOfRatings: 65
-  },
-  {
-    description: 'RGB liquid CPU Cooler',
-    price: 160,
-    hasPreviousPrice: true,
-    previousPrice: 170,
-    image: 'rgb-cooler',
-    score: 4.5,
-    amountOfRatings: 65
-  },
-  {
-    description: 'Small BookShelf',
-    price: 360,
-    hasPreviousPrice: false,
-    image: 'bookshelf',
-    score: 5,
-    amountOfRatings: 65
-  }
-];
+const getProducts = () => {
+  return products.trending;
+};
 
 export const MonthlyProducts = () => {
   return (
     <Container>
       <SectionTitle sectionName="This Month" heading="Best Selling Products" />
-      <ItemGrid products={products}></ItemGrid>
+      <ItemGrid products={getProducts()}></ItemGrid>
     </Container>
   );
 };

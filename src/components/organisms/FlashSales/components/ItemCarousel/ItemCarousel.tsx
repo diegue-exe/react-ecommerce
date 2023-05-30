@@ -4,6 +4,7 @@ import { ItemDisplay } from '../../../../molecules/ItemGrid/components/ItemDispl
 
 type Props = {
   products: {
+    id: string;
     description: string;
     price: number;
     hasPreviousPrice: boolean;
@@ -19,6 +20,7 @@ export const ItemCarousel: FC<Props> = ({ products }) => {
     <Carousel>
       {products.map(
         ({
+          id,
           description,
           price,
           hasPreviousPrice,
@@ -28,6 +30,7 @@ export const ItemCarousel: FC<Props> = ({ products }) => {
           amountOfRatings
         }) => (
           <ItemDisplay
+            id={id}
             name={image}
             description={description}
             price={price}

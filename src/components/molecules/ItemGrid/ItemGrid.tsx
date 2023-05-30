@@ -4,6 +4,7 @@ import { ItemDisplay } from './components/ItemDisplay';
 
 type Props = {
   products: {
+    id: string;
     description: string;
     price: number;
     hasPreviousPrice: boolean;
@@ -19,6 +20,7 @@ export const ItemGrid: FC<Props> = ({ products }) => {
     <GridContainer>
       {products.map(
         ({
+          id,
           description,
           price,
           hasPreviousPrice,
@@ -28,6 +30,7 @@ export const ItemGrid: FC<Props> = ({ products }) => {
           amountOfRatings
         }) => (
           <ItemDisplay
+            id={id}
             name={image}
             description={description}
             price={price}

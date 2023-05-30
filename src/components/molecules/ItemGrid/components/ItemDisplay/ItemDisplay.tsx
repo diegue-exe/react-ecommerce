@@ -3,8 +3,10 @@ import { ImageContainer } from '../../../../atoms/ImageContainer';
 import { ItemContainer, PricesContainer } from './ItemDisplay.styled';
 import { Text } from '../../../../atoms/Text';
 import { Rating } from '../../../../atoms/Rating';
+import { Link } from 'wouter';
 
 type Props = {
+  id: string;
   name: string;
   price: number;
   description: string;
@@ -14,30 +16,29 @@ type Props = {
   amountOfRatings: number;
 };
 
-export const ItemDisplay: FC<Props> = ({
-  name,
-  price,
-  description,
-  hasPreviousPrice = false,
-  previousPrice,
-  score,
-  amountOfRatings
-}) => {
+export const ItemDisplay: FC<Props> = (product) => {
   return (
-    <ItemContainer>
-      <ImageContainer name={name}></ImageContainer>
-      <Text title={description} textSize="normal" bold />
-      <PricesContainer>
-        <Text title={`$${price}`} textSize="small" color="accent" bold />
-        {hasPreviousPrice && (
+    <Link to={`/details/${product.id}`}>
+      <ItemContainer>
+        <ImageContainer name={product.name}></ImageContainer>
+        <Text title={product.description} textSize="normal" bold />
+        <PricesContainer>
           <Text
-            title={`$${previousPrice}` || ''}
+            title={`$${product.price}`}
             textSize="small"
-            color="secondary"
+            color="accent"
+            bold
           />
-        )}
-      </PricesContainer>
-      <Rating score={score} amount={amountOfRatings} />
-    </ItemContainer>
+          {product.hasPreviousPrice && (
+            <Text
+              title={`$${product.previousPrice}` || ''}
+              textSize="small"
+              color="secondary"
+            />
+          )}
+        </PricesContainer>
+        <Rating score={product.score} amount={product.amountOfRatings} />
+      </ItemContainer>
+    </Link>
   );
 };
