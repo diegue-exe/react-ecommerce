@@ -1,18 +1,10 @@
 import React, { FC } from 'react';
 import { Carousel } from './ItemCarousel.styled';
 import { ItemDisplay } from '../../../../molecules/ItemGrid/components/ItemDisplay';
+import { Product } from '../../../../../models/Product';
 
 type Props = {
-  products: {
-    id: string;
-    description: string;
-    price: number;
-    hasPreviousPrice: boolean;
-    previousPrice?: number;
-    image: string;
-    score: number;
-    amountOfRatings: number;
-  }[];
+  products: Product[];
 };
 
 export const ItemCarousel: FC<Props> = ({ products }) => {

@@ -20,7 +20,7 @@ export const ItemDisplay: FC<Props> = (product) => {
   return (
     <Link to={`/details/${product.id}`}>
       <ItemContainer>
-        <ImageContainer name={product.name}></ImageContainer>
+        <ImageContainer name={product.name} size="default"></ImageContainer>
         <Text title={product.description} textSize="normal" bold />
         <PricesContainer>
           <Text
