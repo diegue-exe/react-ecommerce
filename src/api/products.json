@@ -81,7 +81,7 @@
   ],
   "trending": [
     {
-      "id": "AAA009",
+      "id": "AAA001",
       "description": "The north coat",
       "price": 260,
       "hasPreviousPrice": true,
@@ -91,7 +91,7 @@
       "amountOfRatings": 65
     },
     {
-      "id": "AAA010",
+      "id": "AAA002",
       "description": "Gucci duffle bag",
       "price": 960,
       "hasPreviousPrice": true,
@@ -101,7 +101,7 @@
       "amountOfRatings": 65
     },
     {
-      "id": "AAA011",
+      "id": "AAA003",
       "description": "RGB liquid CPU Cooler",
       "price": 160,
       "hasPreviousPrice": true,
@@ -111,7 +111,7 @@
       "amountOfRatings": 65
     },
     {
-      "id": "AAA012",
+      "id": "AAA004",
       "description": "Small BookShelf",
       "price": 360,
       "hasPreviousPrice": false,
