@@ -72,6 +72,24 @@ export const theme = {
       borderRadius: '4px',
       backgroundColor: 'green'
     }
+  },
+  imageContainer: {
+    default: {
+      width: '270px',
+      height: '250px',
+      scale: '1'
+    },
+    //16px margin vertical y 30 de gap horizontal
+    detailBig: {
+      width: '500px',
+      height: '600px',
+      scale: '2'
+    },
+    detailSmall: {
+      width: '170px',
+      height: '138px',
+      scale: '0.5'
+    }
   }
 };
 
@@ -81,3 +99,4 @@ export type TextSize = keyof typeof theme.text.size;
 export type Container = keyof typeof theme.container;
 export type IconSize = keyof typeof theme.icon.size;
 export type ButtonVariant = keyof typeof theme.button;
+export type ImageContainerSize = keyof typeof theme.imageContainer;
