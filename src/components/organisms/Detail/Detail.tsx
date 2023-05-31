@@ -5,6 +5,7 @@ import { Container, DetailsContainer, Underline } from './Detail.styled';
 import { ImageGallery } from './components/ImageGallery';
 import { Text } from '../../atoms/Text';
 import { Rating } from '../../atoms/Rating';
+import { Button } from '../../atoms/Button';
 
 type Props = {
   product: Product;
@@ -23,6 +24,9 @@ export const Detail: FC<Props> = ({ product }) => {
           textSize="small"
         />
         <Underline></Underline>
+        <Text title="Colours:" textSize="big" />
+        <Text title="Size: " textSize="big" />
+        <Button content="Buy now" />
       </DetailsContainer>
     </Container>
   );
