@@ -4,6 +4,7 @@ export const background = {
   accent: '#db4444',
   black: '#000'
 };
+export type Background = keyof typeof background;
 
 export const text = {
   colors: {
@@ -35,8 +36,10 @@ export const text = {
     }
   }
 };
+export type Color = keyof typeof text.colors;
 
 export const container = {
   maxWidth: '1170px',
   margin: 'auto'
 };
+export type Container = keyof typeof container;

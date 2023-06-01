@@ -1,9 +1,10 @@
 import { StyledText } from './Text.styled';
+import { Color } from '../../../theme/theme';
 
 type Props = {
   tag?: 'h1' | 'h2' | 'h3' | 'p' | 'span';
   title: string;
-  color?: string;
+  color?: Color;
   textSize: 'heading' | 'big' | 'normal' | 'small' | 'xsmall';
   bold?: boolean;
 };
@@ -11,16 +12,13 @@ type Props = {
 export const Text: React.FC<Props> = ({
   tag,
   title,
-  color = '#000',
+  color = 'primary',
   textSize,
-  bold
+  bold = false
 }) => {
+  console.log(color + title);
   return (
-    <StyledText
-      as={tag}
-      color={color}
-      textSize={textSize}
-      fontWeight={bold ? '700' : '400'}>
+    <StyledText as={tag} color={color} textSize={textSize} bold={bold}>
       {title}
     </StyledText>
   );

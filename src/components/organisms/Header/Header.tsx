@@ -1,5 +1,7 @@
 import React from 'react';
 import { Text } from '../../atoms/Text/Text';
+import { ReactComponent as Cart } from '../../../components/atoms/Icons/cart.svg';
+import { ReactComponent as Heart } from '../../../components/atoms/Icons/heart.svg';
 import {
   NavContainer,
   NavLinks,
@@ -10,9 +12,7 @@ import {
   SearchContainer,
   Nav
 } from './Header.styled';
-import Cart from '../../atoms/Icons/Cart';
-import Heart from '../../atoms/Icons/Heart';
-import { text } from '../../../theme/theme';
+// TODO
 
 type Props = {
   highlightedMessage: string;
@@ -32,13 +32,7 @@ export const Header: React.FC<Props> = ({
       </HighlightedContainer>
       <Nav>
         <NavContainer>
-          <Text
-            tag="h1"
-            color={text.colors.primary}
-            textSize="big"
-            bold
-            title={title}
-          />
+          <Text tag="h1" color="primary" textSize="big" title={title} bold />
           <NavLinks>
             {anchors.map((anchor) => {
               return <NavAnchor>{anchor}</NavAnchor>;
