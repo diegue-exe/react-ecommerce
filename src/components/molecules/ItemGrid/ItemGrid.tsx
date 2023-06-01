@@ -1,17 +1,10 @@
 import React, { FC } from 'react';
 import { GridContainer } from './ItemGrid.styled';
 import { ItemDisplay } from './components/ItemDisplay';
+import { Product } from '../../../models/Product';
 
 type Props = {
-  products: {
-    description: string;
-    price: number;
-    hasPreviousPrice: boolean;
-    previousPrice?: number;
-    image: string;
-    score: number;
-    amountOfRatings: number;
-  }[];
+  products: Product[];
 };
 
 export const ItemGrid: FC<Props> = ({ products }) => {
@@ -19,6 +12,7 @@ export const ItemGrid: FC<Props> = ({ products }) => {
     <GridContainer>
       {products.map(
         ({
+          id,
           description,
           price,
           hasPreviousPrice,
@@ -28,6 +22,7 @@ export const ItemGrid: FC<Props> = ({ products }) => {
           amountOfRatings
         }) => (
           <ItemDisplay
+            id={id}
             name={image}
             description={description}
             price={price}

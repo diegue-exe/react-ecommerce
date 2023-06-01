@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Header } from '../../components/organisms/Header';
 import { Footer } from '../../components/organisms/Footer';
-import { Sections } from '../../components/organisms/Sections';
+import products from '../../api/products.json';
+import { Detail } from '../../components/organisms/Detail';
+import { Product } from '../../models/Product';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
@@ -26,7 +28,16 @@ const columns = [
   }
 ];
 
-export const Home = () => {
+const getProducts = () => {
+  const productArray: Product[] = products.all;
+  return productArray;
+};
+
+type Props = {
+  id: string;
+};
+
+export const ProductDetails: FC<Props> = ({ id }) => {
   return (
     <>
       <Header
@@ -34,7 +45,11 @@ export const Home = () => {
         title={title}
         anchors={links}
       />
-      <Sections />
+      {getProducts().map((product) => {
+        const isTheClickedProduct = product.id === id;
+        if (isTheClickedProduct) return <Detail product={product} />;
+        return '';
+      })}
       <Footer title={title} columns={columns}></Footer>
     </>
   );

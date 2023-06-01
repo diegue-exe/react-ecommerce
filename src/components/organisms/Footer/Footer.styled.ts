@@ -51,6 +51,17 @@ export const SocialMediaContainer = styled.div`
   justify-content: space-around;
 `;
 
+export const AppStoresContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`;
+
+export const SocialMediaContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
 export const FooterColumnContent = styled.div`
   display: flex;
   flex-direction: column;

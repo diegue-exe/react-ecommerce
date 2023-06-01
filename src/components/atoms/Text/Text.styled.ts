@@ -10,6 +10,6 @@ type Props = {
 export const StyledText = styled.p<Props>`
   color: ${({ color, theme }) => theme.text.colors[color]};
   font-size: ${({ textSize, theme }) => theme.text.size[textSize].fontSize};
-  line-height: ${(props) => props.textSize};
+  line-height: ${({ textSize, theme }) => theme.text.size[textSize].lineHeight};
   font-weight: ${({ bold }) => (bold ? '600' : '400')};
 `;

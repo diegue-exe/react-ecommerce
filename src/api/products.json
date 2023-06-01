@@ -1,0 +1,123 @@
+{
+  "all": [
+    {
+      "id": "AAA001",
+      "description": "The north coat",
+      "price": 260,
+      "hasPreviousPrice": true,
+      "previousPrice": 360,
+      "image": "north-coat",
+      "score": 5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA002",
+      "description": "Gucci duffle bag",
+      "price": 960,
+      "hasPreviousPrice": true,
+      "previousPrice": 1190,
+      "image": "gucci-bag",
+      "score": 4.5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA003",
+      "description": "RGB liquid CPU Cooler",
+      "price": 160,
+      "hasPreviousPrice": true,
+      "previousPrice": 170,
+      "image": "rgb-cooler",
+      "score": 4.5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA004",
+      "description": "Small BookShelf",
+      "price": 360,
+      "hasPreviousPrice": false,
+      "image": "bookshelf",
+      "score": 5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA005",
+      "description": "The north coat",
+      "price": 260,
+      "hasPreviousPrice": true,
+      "previousPrice": 360,
+      "image": "north-coat",
+      "score": 5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA006",
+      "description": "Gucci duffle bag",
+      "price": 960,
+      "hasPreviousPrice": true,
+      "previousPrice": 1190,
+      "image": "gucci-bag",
+      "score": 4.5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA007",
+      "description": "RGB liquid CPU Cooler",
+      "price": 160,
+      "hasPreviousPrice": true,
+      "previousPrice": 170,
+      "image": "rgb-cooler",
+      "score": 4.5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA008",
+      "description": "Small BookShelf",
+      "price": 360,
+      "hasPreviousPrice": false,
+      "image": "bookshelf",
+      "score": 5,
+      "amountOfRatings": 65
+    }
+  ],
+  "trending": [
+    {
+      "id": "AAA001",
+      "description": "The north coat",
+      "price": 260,
+      "hasPreviousPrice": true,
+      "previousPrice": 360,
+      "image": "north-coat",
+      "score": 5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA002",
+      "description": "Gucci duffle bag",
+      "price": 960,
+      "hasPreviousPrice": true,
+      "previousPrice": 1190,
+      "image": "gucci-bag",
+      "score": 4.5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA003",
+      "description": "RGB liquid CPU Cooler",
+      "price": 160,
+      "hasPreviousPrice": true,
+      "previousPrice": 170,
+      "image": "rgb-cooler",
+      "score": 4.5,
+      "amountOfRatings": 65
+    },
+    {
+      "id": "AAA004",
+      "description": "Small BookShelf",
+      "price": 360,
+      "hasPreviousPrice": false,
+      "image": "bookshelf",
+      "score": 5,
+      "amountOfRatings": 65
+    }
+  ]
+}

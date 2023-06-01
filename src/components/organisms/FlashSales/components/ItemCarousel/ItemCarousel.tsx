@@ -1,17 +1,10 @@
 import React, { FC } from 'react';
 import { Carousel } from './ItemCarousel.styled';
 import { ItemDisplay } from '../../../../molecules/ItemGrid/components/ItemDisplay';
+import { Product } from '../../../../../models/Product';
 
 type Props = {
-  products: {
-    description: string;
-    price: number;
-    hasPreviousPrice: boolean;
-    previousPrice?: number;
-    image: string;
-    score: number;
-    amountOfRatings: number;
-  }[];
+  products: Product[];
 };
 
 export const ItemCarousel: FC<Props> = ({ products }) => {
@@ -19,6 +12,7 @@ export const ItemCarousel: FC<Props> = ({ products }) => {
     <Carousel>
       {products.map(
         ({
+          id,
           description,
           price,
           hasPreviousPrice,
@@ -28,6 +22,7 @@ export const ItemCarousel: FC<Props> = ({ products }) => {
           amountOfRatings
         }) => (
           <ItemDisplay
+            id={id}
             name={image}
             description={description}
             price={price}
