@@ -1,41 +1,20 @@
 import React, { FC } from 'react';
 import { FullwidthImage, GalleryGrid } from './ImageGallery.styled';
 import { ImageContainer } from '../../../../atoms/ImageContainer';
-import { Product } from '../../../../../models/Product';
 
 type Props = {
-  product: Product;
+  image: string;
 };
 
-export const ImageGallery: FC<Props> = ({ product }) => {
+export const ImageGallery: FC<Props> = ({ image }) => {
   return (
     <GalleryGrid>
-      <ImageContainer
-        name={product.image}
-        size="detailSmall"
-        hasButtons={false}
-      />
-      <ImageContainer
-        name={product.image}
-        size="detailSmall"
-        hasButtons={false}
-      />
-      <ImageContainer
-        name={product.image}
-        size="detailSmall"
-        hasButtons={false}
-      />
-      <ImageContainer
-        name={product.image}
-        size="detailSmall"
-        hasButtons={false}
-      />
+      <ImageContainer name={image} size="detailSmall" hasButtons={false} />
+      <ImageContainer name={image} size="detailSmall" hasButtons={false} />
+      <ImageContainer name={image} size="detailSmall" hasButtons={false} />
+      <ImageContainer name={image} size="detailSmall" hasButtons={false} />
       <FullwidthImage>
-        <ImageContainer
-          name={product.image}
-          size="detailBig"
-          hasButtons={false}
-        />
+        <ImageContainer name={image} size="detailBig" hasButtons={false} />
       </FullwidthImage>
     </GalleryGrid>
   );
