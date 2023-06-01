@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../../theme/theme';
 import { MonthlyProducts } from '../../components/organisms/MonthlyProducts';
 
+
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
 const highlightedMessage: string =

@@ -4,6 +4,7 @@ import { Square } from './components/Square';
 import { Text } from '../../atoms/Text';
 import { Container, SectionContainer } from './SectionTitle.styled';
 
+
 type Props = {
   sectionName: string;
   squareColor?: Background;

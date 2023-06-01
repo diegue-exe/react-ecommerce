@@ -1,5 +1,7 @@
 import React from 'react';
 import { Text } from '../../atoms/Text/Text';
+import { ReactComponent as Cart } from '../../../components/atoms/Icons/cart.svg';
+import { ReactComponent as Heart } from '../../../components/atoms/Icons/heart.svg';
 import {
   NavContainer,
   NavLinks,
