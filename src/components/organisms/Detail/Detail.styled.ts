@@ -15,5 +15,5 @@ export const DetailsContainer = styled.div`
 
 export const Underline = styled.span`
   height: 1px;
-  background-color: ${({ theme }) => theme.background.black}; // TODO theme
+  background-color: ${({ theme }) => theme.background.black};
 `;
