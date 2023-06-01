@@ -12,7 +12,6 @@ export const ImgContainer = styled.div<Props>`
   align-items: center;
   width: ${({ theme, size }) => theme.imageContainer[size].width};
   height: ${({ theme, size }) => theme.imageContainer[size].height};
-  // TODO añadir scale
   background-color: ${({ theme }) => theme.background.secondary};
 
   border-radius: 4px;
