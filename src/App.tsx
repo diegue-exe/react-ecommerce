@@ -14,7 +14,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <Route path="/home" component={Home} />
         <Route path="/details/:id">
-          {({ id }) => <ProductDetails id={id}></ProductDetails>}
+          {({ id }) => <ProductDetails id={id} />}
         </Route>
       </ThemeProvider>
     </>
