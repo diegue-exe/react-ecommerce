@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: ${({ theme }) => theme.container.maxWidth};
   margin: auto;
   gap: 70px;
+  margin-bottom: 70px;
 `;
 
 export const DetailsContainer = styled.div`
