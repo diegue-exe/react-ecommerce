@@ -1,7 +1,10 @@
 import React from 'react';
 import { Header } from '../../components/organisms/Header';
 import { Footer } from '../../components/organisms/Footer';
-import { Sections } from '../../components/organisms/Sections';
+import { FlashSales } from '../../components/organisms/FlashSales';
+import { Categories } from '../../components/organisms/Categories';
+import { MonthlyProducts } from '../../components/organisms/MonthlyProducts';
+import { Container } from './Home.styled';
 
 const links: string[] = ['Home', 'Contact', 'About', 'Sign Up'];
 const title: string = 'Exclusive';
@@ -34,7 +37,11 @@ export const Home = () => {
         title={title}
         anchors={links}
       />
-      <Sections />
+      <Container>
+        <FlashSales />
+        <Categories />
+        <MonthlyProducts />
+      </Container>
       <Footer title={title} columns={columns}></Footer>
     </>
   );
