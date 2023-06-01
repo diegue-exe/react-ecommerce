@@ -3,6 +3,7 @@ import { ImageContainer } from '../../../../atoms/ImageContainer';
 import { ItemContainer, PricesContainer } from './ItemDisplay.styled';
 import { Text } from '../../../../atoms/Text';
 import { Rating } from '../../../../atoms/Rating';
+
 import { Link } from 'wouter';
 
 type Props = {

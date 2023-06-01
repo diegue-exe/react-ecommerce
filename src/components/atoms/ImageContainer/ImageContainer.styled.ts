@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { ImageContainerSize } from '../../../theme/theme';
 
 type Props = {
@@ -6,6 +7,7 @@ type Props = {
 };
 
 export const ImgContainer = styled.div<Props>`
+
   display: flex;
   position: relative;
   justify-content: center;
