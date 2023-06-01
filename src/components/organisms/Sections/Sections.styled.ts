@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 70px;
+  max-width: ${({ theme }) => theme.container.maxWidth};
+  margin: auto;
 `;
