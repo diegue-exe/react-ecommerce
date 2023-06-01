@@ -75,7 +75,7 @@ export const theme = {
     }
   }
 };
-export type Color = keyof typeof text.colors;
+
 export type Background = keyof typeof theme.background;
 export type Color = keyof typeof theme.text.colors;
 export type TextSize = keyof typeof theme.text.size;

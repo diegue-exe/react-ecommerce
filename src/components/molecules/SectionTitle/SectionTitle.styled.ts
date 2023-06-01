@@ -6,3 +6,9 @@ export const SectionContainer = styled.div`
   gap: 16px;
   margin-bottom: 20px;
 `;
+
+export const Container = styled.div`
+  margin-bottom: 60px;
+`;
+
+
