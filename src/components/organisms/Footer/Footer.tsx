@@ -15,6 +15,7 @@ import appstore from '../../../assets/appstore.png';
 import playstore from '../../../assets/playstore.png';
 import { Icon } from '../../atoms/Icon';
 
+
 type Props = {
   title: string;
   columns: {
