@@ -16,28 +16,32 @@ type Props = {
   amountOfRatings: number;
 };
 
-export const ItemDisplay: FC<Props> = (product) => {
+export const ItemDisplay: FC<Props> = ({
+  id,
+  amountOfRatings,
+  description,
+  hasPreviousPrice,
+  name,
+  price,
+  score,
+  previousPrice
+}) => {
   return (
-    <Link to={`/details/${product.id}`}>
+    <Link to={`/details/${id}`}>
       <ItemContainer>
-        <ImageContainer name={product.name} size="default"></ImageContainer>
-        <Text title={product.description} textSize="normal" bold />
+        <ImageContainer name={name} size="default" />
+        <Text title={description} textSize="normal" bold />
         <PricesContainer>
-          <Text
-            title={`$${product.price}`}
-            textSize="small"
-            color="accent"
-            bold
-          />
-          {product.hasPreviousPrice && (
+          <Text title={`$${price}`} textSize="small" color="accent" bold />
+          {hasPreviousPrice && (
             <Text
-              title={`$${product.previousPrice}` || ''}
+              title={`$${previousPrice}` || ''}
               textSize="small"
               color="secondary"
             />
           )}
         </PricesContainer>
-        <Rating score={product.score} amount={product.amountOfRatings} />
+        <Rating score={score} amount={amountOfRatings} />
       </ItemContainer>
     </Link>
   );
