@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.background.black};
   width: 100%;
@@ -49,4 +50,4 @@ export const AppStoresContainer = styled.div`
 export const SocialMediaContainer = styled.div`
   display: flex;
   justify-content: space-around;
-`;
+ `;
