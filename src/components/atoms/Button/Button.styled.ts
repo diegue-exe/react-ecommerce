@@ -14,7 +14,8 @@ export const StyledButton = styled.button<Props>`
   height: ${({ variant, theme }) => theme.button[variant].height};
   background-color: ${({ variant, theme }) =>
     theme.background[theme.button[variant].backgroundColor]};
-
+  color: ${({ variant, theme }) => theme.button[variant].color};
+  font-size: 16px;
   border: none;
   border-radius: ${({ variant, theme }) => theme.button[variant].borderRadius};
 `;

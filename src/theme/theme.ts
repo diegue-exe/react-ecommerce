@@ -1,4 +1,3 @@
-
 export const theme = {
   background: {
     primary: '#fff',
@@ -53,25 +52,29 @@ export const theme = {
       width: '46px',
       height: '46px',
       borderRadius: '50%',
-      backgroundColor: 'secondary'
+      backgroundColor: 'secondary',
+      color: '#000'
     },
     roundedSmall: {
       width: '34px',
       height: '34px',
       borderRadius: '50%',
-      backgroundColor: 'primary'
+      backgroundColor: 'primary',
+      color: '#000'
     },
     accent: {
       width: '100%',
       height: '56px',
       borderRadius: '4px',
-      backgroundColor: 'accent'
+      backgroundColor: 'accent',
+      color: '#fff'
     },
     green: {
       width: '100%',
       height: '56px',
       borderRadius: '4px',
-      backgroundColor: 'green'
+      backgroundColor: 'green',
+      color: '#fff'
     }
   },
   imageContainer: {

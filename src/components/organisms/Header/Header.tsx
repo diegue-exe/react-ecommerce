@@ -1,7 +1,5 @@
 import React from 'react';
 import { Text } from '../../atoms/Text/Text';
-import { ReactComponent as Cart } from '../../../components/atoms/Icons/cart.svg';
-import { ReactComponent as Heart } from '../../../components/atoms/Icons/heart.svg';
 import {
   NavContainer,
   NavLinks,
@@ -13,7 +11,6 @@ import {
   Nav
 } from './Header.styled';
 import { Icon } from '../../atoms/Icon/Icon';
-// TODO
 
 type Props = {
   highlightedMessage: string;
@@ -40,9 +37,7 @@ export const Header: React.FC<Props> = ({
             })}
           </NavLinks>
           <SearchContainer>
-            <NavSearch
-              type="text"
-              placeholder="What are you looking for?"></NavSearch>
+            <NavSearch type="text" placeholder="What are you looking for?" />
             <Icon name="cart" />
             <Icon name="heart" />
           </SearchContainer>

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import { ImageContainerSize } from '../../../theme/theme';
 
 type Props = {
@@ -7,14 +6,12 @@ type Props = {
 };
 
 export const ImgContainer = styled.div<Props>`
-
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   width: ${({ theme, size }) => theme.imageContainer[size].width};
   height: ${({ theme, size }) => theme.imageContainer[size].height};
-  // TODO añadir scale
   background-color: ${({ theme }) => theme.background.secondary};
 
   border-radius: 4px;

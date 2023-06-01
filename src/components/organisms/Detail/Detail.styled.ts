@@ -5,6 +5,7 @@ export const Container = styled.div`
   max-width: ${({ theme }) => theme.container.maxWidth};
   margin: auto;
   gap: 70px;
+  margin-bottom: 70px;
 `;
 
 export const DetailsContainer = styled.div`
@@ -13,8 +14,7 @@ export const DetailsContainer = styled.div`
   gap: 24px;
 `;
 
-export const Underline = styled.aside`
-  width: 100%;
+export const Underline = styled.span`
   height: 1px;
-  background-color: black;
+  background-color: ${({ theme }) => theme.background.black};
 `;
